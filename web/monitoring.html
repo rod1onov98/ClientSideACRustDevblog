@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .monitoring-container {
+            width: 90%;
+            margin: auto;
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            overflow-x: auto;
+        }
+
+        .player-header, .player-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .player-header {
+            font-weight: bold;
+        }
+
+        .player-row {
+            border-bottom: 1px solid #444;
+        }
+
+        .player-column {
+            flex: 1;
+            text-align: center;
+        }
+
+        .player-column:nth-child(4) {
+            flex: 0 0 150px;
+        }
+
+        .ban-button, .unban-button {
+            width: 100%;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .ban-button {
+            background-color: #e74c3c;
+        }
+
+        .unban-button {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="monitoring-container">
+        <h2>monitoring</h2>
+        <div class="player-header">
+            <div class="player-column">PLAYER NAME</div>
+            <div class="player-column">STEAM ID</div>
+            <div class="player-column">DEVICE NAME</div>
+            <div class="player-column">ACTION</div>
+        </div>
+        <div id="playerList"></div>
+    </div>
+    <script src="monitoring.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Logs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            width: 45%;
+        }
+
+        #logOptions {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Getting logs</h2>
+            <form id="logForm">
+                <div class="form-group">
+                    <label for="steamid">steam id player:</label>
+                    <input type="text" id="steamid" name="steamid" required>
+                </div>
+                <button type="submit">get</button>
+            </form>
+            <div id="logOptions" class="hidden">
+                <div class="button-container">
+                    <button onclick="requestScreenshot()">screenshot</button>
+                    <button onclick="requestLastDetectLog()">detected log</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logs.js"></script>
+</body>
+</html>
