@@ -1,4 +1,4 @@
-clientside anti-cheat for your project located on any devblog of the game Rust, anti-cheat has functionality in the form of searching for suspicious processes, a screenshot of the player's screen at any time, web side, serverside plugin to check for anti-cheat.
+clientside anti-cheat for your project located on any devblog of the game Rust, anti-cheat has functionality in the form of searching for suspicious processes, a screenshot of the player's screen at any time, web site, serverside plugin to check for anti-cheat.
 
 The Web folder contains a site that works with anti-cheat, for their connection in the source code of the anti-cheat, you need to connect an FTP server that is tied to your web hosting, where the site for working with anti-cheat will be located
 
